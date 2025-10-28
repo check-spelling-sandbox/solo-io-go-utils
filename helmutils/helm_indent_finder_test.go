@@ -69,7 +69,7 @@ spec:
 			badWindows := helmutils.FindHelmChartWhiteSpaces(data, opts)
 			Expect(len(badWindows)).To(Equal(2))
 		})
-		It("should detect white space at the end of an line", func() {
+		It("should detect white space at the end of a line", func() {
 			data := `
 apiVersion: v1
 kind: Service
