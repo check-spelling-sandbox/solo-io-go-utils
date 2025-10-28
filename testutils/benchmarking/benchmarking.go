@@ -49,7 +49,7 @@ func ExpectFuncToComplete(f func(), runtimeThresholdInSeconds float64) {
 		BeNumerically(">", 0)))
 }
 
-// TimeForFuncToComplete returns the time the given function spend executing in user mode.
+// TimeForFuncToComplete returns the time spent by the given function executing in user mode.
 // Deprecated: use Measure instead.
 func TimeForFuncToComplete(f func()) float64 {
 	var rusage1 syscall.Rusage
