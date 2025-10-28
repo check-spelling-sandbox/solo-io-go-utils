@@ -349,7 +349,7 @@ func ParseReleaseBody(body string) ([]*Note, map[string][]*Note, error) {
 						continue
 					}
 				}
-				// This section will handles any paragraphs that do not show up under headers e.g. "This release build failed"
+				// This section will handle any paragraphs that do not show up under headers e.g. "This release build failed"
 				v := typedNode.Lines().At(0)
 				note := string(v.Value(buf))
 				if currentHeader != "" {
