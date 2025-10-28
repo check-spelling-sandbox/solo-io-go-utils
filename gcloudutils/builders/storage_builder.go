@@ -57,7 +57,7 @@ func (sb *StorageBuilder) InitBuildWithSha(ctx context.Context, builderCtx ShaBu
 			COMMIT_SHA: builderCtx.Sha(),
 		}
 	}
-	cbm.Substitutions = addDefaultSubsitutions(content, cbm)
+	cbm.Substitutions = addDefaultSubstitutions(content, cbm)
 	return cbm, nil
 }
 
@@ -87,7 +87,7 @@ func (sb *StorageBuilder) InitBuildWithTag(ctx context.Context, builderCtx TagBu
 		cbm.Substitutions[COMMIT_SHA] = builderCtx.Sha()
 	}
 
-	cbm.Substitutions = addDefaultSubsitutions(content, cbm)
+	cbm.Substitutions = addDefaultSubstitutions(content, cbm)
 	return cbm, nil
 }
 
@@ -267,7 +267,7 @@ func unmarshalCloudbuild(ctx context.Context, builderCtx BuildContext, ref strin
 	return &cbm, content, nil
 }
 
-func addDefaultSubsitutions(file string, build *cloudbuild.Build) map[string]string {
+func addDefaultSubstitutions(file string, build *cloudbuild.Build) map[string]string {
 	var subs map[string]string
 	if build.Substitutions == nil {
 		subs = make(map[string]string)
