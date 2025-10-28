@@ -141,7 +141,7 @@ func (v Version) IsGreaterThan(lesser Version) (bool, bool) {
 // In order, returns isGreaterThanOrEqualTo, isDeterminable
 // labelOrder specifies tie-break order for labels
 // e.g. labelOrder = [ beta, alpha, predev ], then 1.7.0-beta11 > 1.7.0-alpha5 > 1.7.0-predev9
-// isDeterminable is for incomporable versions because they have different labels not specified in labelOrder
+// isDeterminable is for incomparable versions because they have different labels not specified in labelOrder
 func (v Version) IsGreaterThanWithLabelOrder(lesser Version, labelOrder []string) (bool, bool) {
 
 	greaterThan, determinable := v.IsGreaterThan(lesser)
