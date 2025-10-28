@@ -27,7 +27,7 @@ Vulnerability ID|Package|Severity|Installed Version|Fixed Version|Reference
 Trivy Returned Empty Report
 {{- end }}`
 
-// Create tempoarary file that contains the trivy template
+// Create temporary file that contains the trivy template
 // Trivy CLI only accepts files as input for a template, so this is a workaround
 func GetTemplateFile(trivyTemplate string) (string, error) {
 	f, err := ioutil.TempFile("", "")
