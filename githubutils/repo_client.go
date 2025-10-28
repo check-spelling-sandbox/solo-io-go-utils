@@ -20,7 +20,7 @@ type PRSpec struct {
 }
 
 type RepoClient interface {
-	FindLatestReleaseTagIncudingPrerelease(ctx context.Context) (string, error)
+	FindLatestReleaseTagIncludingPrerelease(ctx context.Context) (string, error)
 	CompareCommits(ctx context.Context, base, sha string) (*github.CommitsComparison, error)
 	DirectoryExists(ctx context.Context, sha, directory string) (bool, error)
 	FileExists(ctx context.Context, sha, path string) (bool, error)
@@ -53,8 +53,8 @@ func NewRepoClient(client *github.Client, owner, repo string) RepoClient {
 
 // Deprecated: The latest release is not guaranteed to be the largest (by semver) tag, just the
 // most recent release. Use "FindLatestTagIncludingPrereleaseBeforeSha" instead.
-func (c *repoClient) FindLatestReleaseTagIncudingPrerelease(ctx context.Context) (string, error) {
-	return FindLatestReleaseTagIncudingPrerelease(ctx, c.client, c.owner, c.repo)
+func (c *repoClient) FindLatestReleaseTagIncludingPrerelease(ctx context.Context) (string, error) {
+	return FindLatestReleaseTagIncludingPrerelease(ctx, c.client, c.owner, c.repo)
 }
 
 func (c *repoClient) FindLatestTagIncludingPrereleaseBeforeSha(ctx context.Context, sha string) (string, error) {

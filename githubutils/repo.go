@@ -209,7 +209,7 @@ func FilterRepositoryReleases(releases []*github.RepositoryRelease, predicate Re
 	return filteredReleases
 }
 
-func FindLatestReleaseTagIncudingPrerelease(ctx context.Context, client *github.Client, owner, repo string) (string, error) {
+func FindLatestReleaseTagIncludingPrerelease(ctx context.Context, client *github.Client, owner, repo string) (string, error) {
 	releases, _, err := client.Repositories.ListReleases(ctx, owner, repo, &github.ListOptions{})
 	if err != nil {
 		return "", err

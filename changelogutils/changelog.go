@@ -128,12 +128,12 @@ func GetLatestTag(ctx context.Context, owner, repo string) (string, error) {
 		return "", err
 	}
 
-	return githubutils.FindLatestReleaseTagIncudingPrerelease(ctx, client, owner, repo)
+	return githubutils.FindLatestReleaseTagIncludingPrerelease(ctx, client, owner, repo)
 }
 
 // Deprecated: use ChangelogValidator instead
 func GetProposedTagForRepo(ctx context.Context, client *github.Client, owner, repo string) (string, error) {
-	latestTag, err := githubutils.FindLatestReleaseTagIncudingPrerelease(ctx, client, owner, repo)
+	latestTag, err := githubutils.FindLatestReleaseTagIncludingPrerelease(ctx, client, owner, repo)
 	if err != nil {
 		return "", err
 	}

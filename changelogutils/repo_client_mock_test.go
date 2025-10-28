@@ -154,19 +154,19 @@ func (mr *MockRepoClientMockRecorder) FileExists(arg0, arg1, arg2 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FileExists", reflect.TypeOf((*MockRepoClient)(nil).FileExists), arg0, arg1, arg2)
 }
 
-// FindLatestReleaseTagIncudingPrerelease mocks base method
-func (m *MockRepoClient) FindLatestReleaseTagIncudingPrerelease(arg0 context.Context) (string, error) {
+// FindLatestReleaseTagIncludingPrerelease mocks base method
+func (m *MockRepoClient) FindLatestReleaseTagIncludingPrerelease(arg0 context.Context) (string, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "FindLatestReleaseTagIncudingPrerelease", arg0)
+	ret := m.ctrl.Call(m, "FindLatestReleaseTagIncludingPrerelease", arg0)
 	ret0, _ := ret[0].(string)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// FindLatestReleaseTagIncudingPrerelease indicates an expected call of FindLatestReleaseTagIncudingPrerelease
-func (mr *MockRepoClientMockRecorder) FindLatestReleaseTagIncudingPrerelease(arg0 interface{}) *gomock.Call {
+// FindLatestReleaseTagIncludingPrerelease indicates an expected call of FindLatestReleaseTagIncludingPrerelease
+func (mr *MockRepoClientMockRecorder) FindLatestReleaseTagIncludingPrerelease(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FindLatestReleaseTagIncudingPrerelease", reflect.TypeOf((*MockRepoClient)(nil).FindLatestReleaseTagIncudingPrerelease), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FindLatestReleaseTagIncludingPrerelease", reflect.TypeOf((*MockRepoClient)(nil).FindLatestReleaseTagIncludingPrerelease), arg0)
 }
 
 // FindLatestTagIncludingPrereleaseBeforeSha mocks base method

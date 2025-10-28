@@ -35,7 +35,7 @@ var _ = Describe("repo client utils", func() {
 
 	It("can get latest release version", func() {
 		client = githubutils.NewRepoClient(githubClient, owner, repo)
-		version, err := client.FindLatestReleaseTagIncudingPrerelease(ctx)
+		version, err := client.FindLatestReleaseTagIncludingPrerelease(ctx)
 		Expect(err).NotTo(HaveOccurred())
 		_, err = versionutils.ParseVersion(version)
 		Expect(err).NotTo(HaveOccurred())
@@ -43,7 +43,7 @@ var _ = Describe("repo client utils", func() {
 
 	It("can get 'latest release version' for repo with no prior releases", func() {
 		client = githubutils.NewRepoClient(githubClient, owner, repoWithoutReleasesName)
-		version, err := client.FindLatestReleaseTagIncudingPrerelease(ctx)
+		version, err := client.FindLatestReleaseTagIncludingPrerelease(ctx)
 		Expect(err).NotTo(HaveOccurred())
 		Expect(version).To(Equal(versionutils.SemverNilVersionValue))
 		_, err = versionutils.ParseVersion(version)

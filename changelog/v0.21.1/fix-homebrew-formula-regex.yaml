@@ -2,4 +2,4 @@ changelog:
   - type: NON_USER_FACING
     description: >
       Adds a method will get the latest release by Semantic Versioning from a github repo.
-      Other methods, such as FindLatestReleaseTag and FindLatestReleaseTagIncudingPrerelease only find latest releases by chronological order, which may not be appropriate if a backport v1.6.x was released after a v1.7.0-betax.
+      Other methods, such as FindLatestReleaseTag and FindLatestReleaseTagIncludingPrerelease only find latest releases by chronological order, which may not be appropriate if a backport v1.6.x was released after a v1.7.0-betax.
