@@ -663,7 +663,7 @@ This release contained no user-facing changes.
 
 **New Features**
 
-- Add a tiemout to the cluster lock. (https://github.com/solo-io/go-utils/issues/72)
+- Add a timeout to the cluster lock. (https://github.com/solo-io/go-utils/issues/72)
 
 
 ### v0.5.0
