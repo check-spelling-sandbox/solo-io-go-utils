@@ -20,7 +20,7 @@ markdown release notes from github.
 ## Changelog Gen Utils
 
 These utils parse release notes from github and output a JSON which can be input to a 
-javascript front-end, which will be part of the Solo.io Hugo theme used for the docs site.
+JavaScript front-end, which will be part of the Solo.io Hugo theme used for the docs site.
 There are two "levels" of changelogs that are generated. These are described below.
 
 
