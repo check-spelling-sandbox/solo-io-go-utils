@@ -64,7 +64,7 @@ func FindHelmChartWhiteSpaces(data string, opts HelmDetectOptions) [][]string {
 			// until we exit the specialBreak
 			continue
 		}
-		// // this means an empty line has occured, and it contains only spaces, so move on to the next line
+		// // this means an empty line has occurred, and it contains only spaces, so move on to the next line
 		if (isCurrentLevel || isNextLevel) && containsOnlySpaces {
 			continue
 		}
