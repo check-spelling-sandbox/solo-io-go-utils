@@ -7,7 +7,7 @@ import (
 	"github.com/rotisserie/eris"
 )
 
-// returns the absolute path to the file the caller
+// returns the absolute path to the caller file.
 // intended to provide a way to find test files
 func GetCurrentFile() (string, error) {
 	_, callerFile, _, ok := runtime.Caller(1)
