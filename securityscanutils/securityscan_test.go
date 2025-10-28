@@ -53,7 +53,7 @@ var _ = Describe("Security Scan Suite", func() {
 						OutputResultLocally: true,
 						ImagesPerVersion: map[string][]string{
 							"v1.14.0": {"gloo"},
-							// Scan should continue in the case an image cannot be found
+							// Scan should continue when an image cannot be found
 							"v1.15.1": {"thisimagecannotbefound", "gloo", "discovery"},
 						},
 						VersionConstraint: verConstraint,
