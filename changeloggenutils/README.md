@@ -70,7 +70,7 @@ can get tricky. This is why we merge in open source changelog notes into the ent
       // Top level release data has major version and minor version for grouping
       "v1.8.0": [
         {
-          // Version data includes full version infformation
+          // Version data includes full version information
           "v1.8.0-beta3": {
             "Categories": {
               "Dependency Bumps": [
