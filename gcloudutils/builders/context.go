@@ -161,7 +161,7 @@ func NewReleaseContext(ctx context.Context, sharedContext *sharedContext, releas
 	sha := tag.GetObject().GetSHA()
 	logger.Info().Msg(fmt.Sprintf("tag %s is sha %s", tagName, sha))
 
-	// could not find the sha.. return the release anyuway as it may work for some use cases.
+	// could not find the sha.. return the release anyway as it may work for some use cases.
 	return &ReleaseContext{sharedContext: sharedContext, sha: sha, release: release}, nil
 }
 
