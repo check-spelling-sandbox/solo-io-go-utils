@@ -40,7 +40,7 @@ This release contained no user-facing changes.
 
 **New Features**
 
-- Add utilites to help move and inspect files in a repo. (https://github.com/solo-io/go-utils/issues/298)
+- Add utilities to help move and inspect files in a repo. (https://github.com/solo-io/go-utils/issues/298)
 
 **Fixes**
 
