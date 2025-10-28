@@ -25,14 +25,14 @@ type ExponentialBackoff struct {
 }
 
 // Deprecated: Deprecated due to typo; use ExponentialBackoff instead
-type ExponentioalBackoff = ExponentialBackoff
+type ExponentialBackoff = ExponentialBackoff
 
 type Backoff interface {
 	Backoff(ctx context.Context, f func(ctx context.Context) error) error
 }
 
 // Deprecated: Deprecated due to typo; use NewExponentialBackoff instead
-func NewExponentioalBackoff(eb ExponentioalBackoff) Backoff {
+func NewExponentialBackoff(eb ExponentialBackoff) Backoff {
 	return NewExponentialBackoff(eb)
 }
 
