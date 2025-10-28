@@ -238,7 +238,7 @@ func (g *MergedReleaseGenerator) GetOpenSourceDependency(enterpriseVersion *Vers
 		return nil, fmt.Errorf("error fetching dependency for enterprise version %s: %s", enterpriseVersion.String(), err.Error())
 	}
 	if len(files) < 1 {
-		return nil, fmt.Errorf("unable to find go.mod file in enteprise repository")
+		return nil, fmt.Errorf("unable to find go.mod file in enterprise repository")
 	}
 	content, err := files[0].GetContent()
 	if err != nil {
