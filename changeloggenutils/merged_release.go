@@ -25,12 +25,12 @@ type Options struct {
 	// Unused in MinorReleaseGenerator
 	// This is the Open Source repo in MergedReleaseGenerator
 	DependentRepo string
-	// List of Github Repository Releases for the Main Repo
+	// List of GitHub Repository Releases for the Main Repo
 	MainRepoReleases []*github.RepositoryRelease
-	// List of Github Repository Releases for the Dependent Repo
+	// List of GitHub Repository Releases for the Dependent Repo
 	DependentRepoReleases []*github.RepositoryRelease
 
-	// NumVersions sets the maximum amount of releases to be fetched from Github.
+	// NumVersions sets the maximum amount of releases to be fetched from GitHub.
 	// Once fetched, MaxVersion and MinVersion are bounds for which versions are included
 	// in the output. The following three only bound the
 	NumVersions int

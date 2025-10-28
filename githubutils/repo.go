@@ -181,7 +181,7 @@ func GetRepoReleasesWithPredicateAndMax(ctx context.Context, client *github.Clie
 		}
 
 		// Only append releases if they match the predicate
-		// This is required since the Github API does not expose parameters to filter the RepositoryRelease list in the request
+		// This is required since the GitHub API does not expose parameters to filter the RepositoryRelease list in the request
 		filteredReleases := FilterRepositoryReleases(releases, predicate)
 		allReleases = append(allReleases, filteredReleases...)
 

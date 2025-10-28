@@ -11,5 +11,5 @@ changelog:
     resolvesIssue: true
     description: >
       Expose a new option 'CreateGithubIssueForLatestPatchVersion', which when enabled, will ensure that the
-      SecurityScanner only creates Github issues to track the latest patch version as opposed to creating
+      SecurityScanner only creates GitHub issues to track the latest patch version as opposed to creating
       an issue for every version (which it has historically done)

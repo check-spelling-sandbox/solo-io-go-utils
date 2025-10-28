@@ -1,6 +1,6 @@
-## Uploading Release Assets to Github
+## Uploading Release Assets to GitHub
 
-To upload release assets to Github, follow these steps (requires go-utils 0.2.10+). 
+To upload release assets to GitHub, follow these steps (requires go-utils 0.2.10+). 
 
 ### Create a Go script
 
@@ -38,7 +38,7 @@ func main() {
 
 ```bash
 #----------------------------------------------------------------------------------
-# Github Assets
+# GitHub Assets
 #----------------------------------------------------------------------------------
 
 .PHONY: upload-github-release-assets

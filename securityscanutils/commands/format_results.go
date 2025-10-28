@@ -72,7 +72,7 @@ func (f *formatResultsOptions) addToFlags(flags *pflag.FlagSet) {
 	flags.BoolVarP(&f.generateCachedReleases, "GenerateCachedReleases", "p", true,
 		"If true, then populate the file specified by the CachedReleasesFile flag with all releases from Github."+
 			" If false, then the command assumes that the file has already been created and populated. "+
-			" Should be set to false for testing to avoid rate-limiting by Github. Defaults to true.")
+			" Should be set to false for testing to avoid rate-limiting by GitHub. Defaults to true.")
 	flags.StringVarP(&f.imageFile, "ImageFile", "f", "",
 		"Different release versions may have different images to scan."+
 			"\nTo deal with this, the run-security-scan command expects a file input that maps version constraints to images"+

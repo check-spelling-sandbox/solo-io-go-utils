@@ -20,12 +20,12 @@ func (r GithubRepo) Address() string {
 	return fmt.Sprintf("github.com/%s/%s", r.Owner, r.RepoName)
 }
 
-// GithubIssueWriter is responsible for creating Github issues
+// GithubIssueWriter is responsible for creating GitHub issues
 // to track vulnerabilities that have been discovered in images within a release.
 // It is configured with a Predicate that filters which releases to
 // write issues for, and which to skip
 type GithubIssueWriter struct {
-	// The details about the Github repository
+	// The details about the GitHub repository
 	repo GithubRepo
 
 	// The client used to write the issues
@@ -54,7 +54,7 @@ func NewGithubIssueWriter(repo GithubRepo, client *github.Client, issuePredicate
 // Labels that are applied to github issues that security scan generates
 var labels = []string{"trivy", "vulnerability"}
 
-// getAllGithubIssues returns the set of open issues in a Github repository that contain the trivy labels
+// getAllGithubIssues returns the set of open issues in a GitHub repository that contain the trivy labels
 func (g *GithubIssueWriter) getAllGithubIssues(ctx context.Context) ([]*github.Issue, error) {
 	if g.allGithubIssues != nil {
 		// Maintain a local cache of issue to avoid re-requesting each time
@@ -72,7 +72,7 @@ func (g *GithubIssueWriter) getAllGithubIssues(ctx context.Context) ([]*github.I
 	return g.allGithubIssues, nil
 }
 
-// Creates/Updates a Github Issue per release
+// Creates/Updates a GitHub Issue per release
 // The github issue will have the markdown table report of the image's vulnerabilities
 // example: https://github.com/solo-io/solo-projects/issues/2458
 func (g *GithubIssueWriter) Write(

@@ -4,7 +4,7 @@ Any repository set up with the Solo bot webhook for CI and release builds can op
 using the automated changelog provided in this utility. The benefits of using the changelog include:
 
 - Automatically producing the description for the github release page, and optionally the docs, with zero effort. 
-- Ensuring that every change is described in the release notes, with links to Github issues.  
+- Ensuring that every change is described in the release notes, with links to GitHub issues.  
 - Ensuring that the release notes are consistently formatted across releases and repos. 
 - Ensuring that the release versions are incremented correctly according to semantic versioning. 
 
@@ -104,7 +104,7 @@ changelog:
 releaseStableApi: true 
 ``` 
 
-## Publishing release notes to Github
+## Publishing release notes to GitHub
 
 Changelogs will automatically be rendered into a markdown string, and the CI release bot will 
 immediately update a release description to be the changelog when a release is published. 

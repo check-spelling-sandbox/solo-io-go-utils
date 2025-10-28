@@ -184,12 +184,12 @@ func (s *SecurityScanner) initializeRepoConfiguration(ctx context.Context, repo 
 	var issuePredicate githubutils.RepositoryReleasePredicate = &githubutils.NoReleasesPredicate{}
 	useGithubWriter := repoOptions.CreateGithubIssuePerVersion || repoOptions.CreateGithubIssueForLatestPatchVersion
 	if repoOptions.CreateGithubIssuePerVersion {
-		// Create Github issue for all releases, if configured
+		// Create GitHub issue for all releases, if configured
 		issuePredicate = &githubutils.AllReleasesPredicate{}
 	}
 
 	if repoOptions.CreateGithubIssueForLatestPatchVersion {
-		// Create Github issues for all releases in the set
+		// Create GitHub issues for all releases in the set
 		issuePredicate = NewLatestPatchRepositoryReleasePredicate(releasesToScan)
 	}
 	if useGithubWriter {

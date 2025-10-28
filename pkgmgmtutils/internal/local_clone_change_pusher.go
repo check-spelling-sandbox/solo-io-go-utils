@@ -39,7 +39,7 @@ func (l *localCloneChangePusher) UpdateAndPush(
 	}
 	defer os.RemoveAll(dirTemp) // Cleanup local clone when done
 
-	// git Clone Github repo
+	// git Clone GitHub repo
 	repo, err := git.PlainClone(dirTemp, false, &git.CloneOptions{
 		URL: "https://github.com/" + formulaOptions.RepoOwner + "/" + formulaOptions.RepoName,
 	})
