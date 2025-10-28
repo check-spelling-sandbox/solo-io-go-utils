@@ -24,7 +24,7 @@ import (
 // returns the windows of the helm chart that contain white spacing and formatting issues.
 func FindHelmChartWhiteSpaces(data string, opts HelmDetectOptions) [][]string {
 	lines := strings.Split(string(data), "\n")
-	// we want to count each line, if the number of spaces at the begining is equal to 0, +2, or -2 from the previous line
+	// we want to count each line, if the number of spaces at the beginning is equal to 0, +2, or -2 from the previous line
 	// then we want to continue to the next line. Else we want to throw an error.
 	previous := previousInfo{NumOfSpaces: 0, BeganWithArray: false}
 	badWindows := [][]string{}
