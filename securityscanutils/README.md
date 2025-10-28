@@ -8,7 +8,7 @@ trivy image --severity HIGH,CRITICAL quay.io/solo-io/<IMAGE>:<VERSION>
 
 ## Using securityscanutils
 Using the utils here is as easy as using the CLI defined in the cli subdirectory. The snippet
-below shows the output the said CLI's `help` command.
+below shows the output of the CLI's `help` command.
 
 The `GITHUB_TOKEN` environment variable must be set for security scanning to work.
 
