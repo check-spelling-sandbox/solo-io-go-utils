@@ -18,7 +18,7 @@ import (
 		these are now ignored areas in the YAML.
 	- if the YAML has empty lines, these are acceptable.
 	- if the YAMl has spaces in an empty line, there is an option to control
-		whether to see these or not. Use the DetectWhiteSpacesInEmptyLines option when parsing.
+		whether or not to see these. Use the DetectWhiteSpacesInEmptyLines option when parsing.
 */
 
 // returns the windows of the helm chart that contain white spacing and formatting issues.
