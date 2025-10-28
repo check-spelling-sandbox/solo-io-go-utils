@@ -100,7 +100,7 @@ func HashableEqual(val1 interface{}, val2 interface{}) (equal bool, ok bool) {
 
 /*
 This function will hash anything, and panic if it fails.
-If the object is a `SafeHasher` than it will use the generated Hasher, otherwise
+If the object is a `SafeHasher` than it will use the generated Hasher; otherwise,
 it will use the hashstructure library.
 */
 func MustHash(val interface{}) uint64 {
