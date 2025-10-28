@@ -70,7 +70,7 @@ func NewCloudBuildClient(ctx context.Context, projectId string) (*cloudbuild.Ser
 	if err != nil {
 		contextutils.LoggerFrom(ctx).Errorw("Error creating cloud build client",
 			zap.Error(err),
-			zap.String("proejctId", projectId))
+			zap.String("projectId", projectId))
 		return nil, err
 	}
 	return buildClient, nil
@@ -93,7 +93,7 @@ func NewPubSubClient(ctx context.Context, projectId string) (*pubsub.Client, err
 	if err != nil {
 		contextutils.LoggerFrom(ctx).Errorw("Error creating pub sub client",
 			zap.Error(err),
-			zap.String("proejctId", projectId))
+			zap.String("projectId", projectId))
 		return nil, err
 	}
 	return pubsub, nil
