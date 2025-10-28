@@ -49,7 +49,7 @@ func (t *TrivyScanner) ScanImage(ctx context.Context, image, templateFile, outpu
 		image}
 
 	// Execute the trivy scan, with retries and sleep's between each retry
-	// This can occur due to connectivity issues or epehemeral issues with
+	// This can occur due to connectivity issues or ephemeral issues with
 	// the registry. For example sometimes quay has issues providing a given layer
 	// This leads to a total wait time of up to 110 seconds outside of the base
 	// operation. This timing is in the same ballpark as what k8s finds sensible
