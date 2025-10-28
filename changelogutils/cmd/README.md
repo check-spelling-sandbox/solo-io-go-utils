@@ -508,7 +508,7 @@ This release contained no user-facing changes.
 
 **New Features**
 
-- Introduce a utility for managing zap logs from a CLI tool. The new `clicore` library provides a means of sending human-friendly log messages to the console while capturing full json-formatted logs to a file. Library includes a pair of `Run` methods for siplified execution of the &#34;main&#34; file and simplified output validation during integration tests. (https://github.com/solo-io/go-utils/issues/135)
+- Introduce a utility for managing zap logs from a CLI tool. The new `clicore` library provides a means of sending human-friendly log messages to the console while capturing full json-formatted logs to a file. Library includes a pair of `Run` methods for simplified execution of the &#34;main&#34; file and simplified output validation during integration tests. (https://github.com/solo-io/go-utils/issues/135)
 - Simplified way to call cobra commands from test environments. (https://github.com/solo-io/go-utils/issues/124)
 - The `PrintTrimmedStack` fail handler simplifies error tracking in ginkgo tests by printing a condensed stack trace upon failure. Printout excludes well-known overhead files so you can more easily sight the failing line. This eliminates the need to count stack offset via `ExpectWithOffset`. You can just use `Expect`. (https://github.com/solo-io/go-utils/issues/131)
 
