@@ -86,7 +86,7 @@ type SecurityScanOpts struct {
 	// If left empty, all versions will be scanned
 	VersionConstraint *semver.Constraints
 
-	// Required: image repo (quay.io, gcr.io, gchr.io)
+	// Required: image repo (quay.io, gcr.io, ghcr.io)
 	ImageRepo string
 
 	// Creates github issue if image vulnerabilities are found
