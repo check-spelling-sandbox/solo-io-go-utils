@@ -174,7 +174,7 @@ func (s *Spaces) IsEmptyLine() bool {
 	return s.line == ""
 }
 
-// HasSpecialBreak if the last section contians a special break
+// HasSpecialBreak if the last section contains a special break
 func (s *Spaces) HasSpecialBreak() bool {
 	specialBreaks := []string{"|", "|-", "|+", ">", ">+", ">-"}
 	chars := s.spaces[len(s.spaces)-1]
