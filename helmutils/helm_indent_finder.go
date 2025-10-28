@@ -48,7 +48,7 @@ func FindHelmChartWhiteSpaces(data string, opts HelmDetectOptions) [][]string {
 		shouldContinue := false
 		currentNumOfSpaces := s.GetNumberOfSpacesAtBeginning()
 		beginsWithArray := s.BeginsWithArray()
-		// next level is the next accpetable number of spaces
+		// next level is the next acceptable number of spaces
 		nextLevel := previous.NumOfSpaces + 2
 		twoLevels := previous.NumOfSpaces + 4
 		isCurrentLevel := previous.NumOfSpaces == currentNumOfSpaces
